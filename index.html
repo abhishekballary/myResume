@@ -7,7 +7,7 @@
     <title>Resume</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body onload="onLoadFunction()">
     <header>
         <div class="nameContainer">
                 <div class="row">
@@ -32,7 +32,7 @@
                     <span class="alignRight">80%</span>
                     </div>
                     <div class="progressBar">
-                        <span class="bar"></span>
+                        <span class="bar bar0" value="80%"></span>
                     </div>
 
                     <div class="js">
@@ -40,7 +40,7 @@
                         <span class="alignRight">70%</span>
                         </div>
                         <div class="progressBar">
-                            <span class="bar" style="width:70%;"></span>
+                            <span class="bar bar1" value="70%"></span>
                         </div>
 
                         <div class="js">
@@ -48,7 +48,7 @@
                             <span class="alignRight">85%</span>
                             </div>
                             <div class="progressBar">
-                                <span class="bar" style="width:85%;"></span>
+                                <span class="bar bar2" value="85%"></span>
                             </div>
 
                             <div class="js">
@@ -56,7 +56,7 @@
                                 <span class="alignRight">70%</span>
                                 </div>
                                 <div class="progressBar">
-                                    <span class="bar" style="width:70%;"></span>
+                                    <span class="bar bar3" value="70%"></span>
                                 </div>
             </div>
         </div>
@@ -165,7 +165,7 @@
                     <h3>BALAJI ENTERPRISES WEBSITE</h3>
                     <p>Balaji the brand name manufacture of distribution transformer,Transformer manufacturers, suppliers and exporters in Hubli,
                         Karnataka.
-                        WEBSITE ADDRESS: www.balajienterpriseshubli.com</p><br>
+                        WEBSITE ADDRESS: <a target="_blank" href="https://www.balajienterpriseshubli.com">https://www.balajienterpriseshubli.com</a></p><br>
                         <p>Technologies Used :</p>
                     <ul>
                         <li>Front-End : HTML5, CSS, Bootstrap,Javascript</li>
@@ -187,6 +187,7 @@
         </div>
     </section>
 </body>
+<script src="./js/index.js"></script>
 <script src="./js/retype.js"></script>
 <script>
     var typed = new Typed('#typed',{

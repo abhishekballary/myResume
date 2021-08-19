@@ -134,6 +134,8 @@ font-family: sans-serif;
     background-color: #b7eb34;
     height: 100%;
     display: block;
+    position: relative;
+    transition: all 0.5s;
 }
 
 .section2{
