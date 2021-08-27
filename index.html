@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="./css/slide.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body onload="onLoadFunction()">
@@ -23,7 +24,7 @@
             <div class="about">
                  <h3>Personal Profile</h3>
                  <!-- <h2>Responsive Profile Card</h2> -->
-                 <p>I am a software engineer who have worked on client side and server side aspects of applicatins. I have experience in working in dynamic environments which require learning of new technologies faster and implements apps in them.</p>
+                 <p>I am a software engineer who have worked on client side and server side aspects of application. I have experience in working in dynamic environments which require learning of new technologies faster and implements apps in them.</p>
             </div>
             <div class="skills">
                     <h2>Skills</h2>
@@ -151,38 +152,68 @@
         <div class="row">
             <div class="projects" style="word-wrap: break-word;">
                 <h2>Projects I have worked on</h2>
-                <div class="projct exp1">
-                    <h3>RAKSHAAYUR WEBSITE</h3>
-                    <p>Online Ayuravedic product seller.</p>
-                    <p> WEBSITE ADDRESS: <a target="_blank" href="https://rakshaayur.com/">https://rakshaayur.com</a></p>
-                        <p>Technologies Used :</p>
-                    <ul>
-                        <li>Front-End : HTML5, CSS, Bootstrap,Javascript</li>
-                    </ul>
-                </div>
+                <div class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="projct exp1">
+                                    <h3>RAKSHAAYUR WEBSITE</h3>
+                                    <p>Online Ayuravedic,Home care, Pooja store, Dry Fruits, Essential & Natural Oils, and Health Care prodoucts seller.</p>
+                                    <p> WEBSITE ADDRESS: <a target="_blank" href="https://rakshaayur.com/">https://rakshaayur.com</a></p><br>
+                                        <p>Technologies Used :</p>
+                                    <ul>
+                                        <li>Front-End : HTML5, CSS, Bootstrap,Javascript</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="projct exp1">
+                                    <h3>BALAJI ENTERPRISES WEBSITE</h3>
+                                    <p>Balaji the brand name manufacture of distribution transformer,Transformer manufacturers, suppliers and exporters in Hubli,
+                                        Karnataka.</p>
+                                        <p>WEBSITE ADDRESS: <a target="_blank" href="https://www.balajienterpriseshubli.com">https://www.balajienterpriseshubli.com</a></p><br>
+                                        <p>Technologies Used :</p>
+                                    <ul>
+                                        <li>Front-End : HTML5, CSS, Bootstrap,Javascript</li>
+                                    </ul>
+                                </div>
 
-                <div class="projct exp1">
-                    <h3>BALAJI ENTERPRISES WEBSITE</h3>
-                    <p>Balaji the brand name manufacture of distribution transformer,Transformer manufacturers, suppliers and exporters in Hubli,
-                        Karnataka.
-                        WEBSITE ADDRESS: <a target="_blank" href="https://www.balajienterpriseshubli.com">https://www.balajienterpriseshubli.com</a></p><br>
-                        <p>Technologies Used :</p>
-                    <ul>
-                        <li>Front-End : HTML5, CSS, Bootstrap,Javascript</li>
-                    </ul>
-                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="projct exp1">
+                                    <h3>STUDENTS ENROLL TO COURSE PROJECT</h3>
+                                    <p>A student can enroll for any number of courses and each course can have any number of students and maintain student details a nd
+                                        taken course details, payment details.</p><br>
+                                        <p>Technologies Used :</p>
+                                    <ul>
+                                        <li>Front-End : HTML5, CSS, Bootstrap,Javascript</li>
+                                        <li>Back-End : Node JS With EJS Framework</li>
+                                        <li>Database : MYSQL</li>
+                                    </ul>
+                                </div>
 
-                <div class="projct exp1">
-                    <h3>STUDENTS ENROLL TO COURSE PROJECT</h3>
-                    <p>A student can enroll for any number of courses and each course can have any number of students and maintain student details a nd
-                        taken course details, payment details.</p>
-                        <p>Technologies Used :</p>
-                    <ul>
-                        <li>Front-End : HTML5, CSS, Bootstrap,Javascript</li>
-                        <li>Back-End : Node JS With EJS Framework</li>
-                        <li>Database : MYSQL</li>
-                    </ul>
+                            </li>
+
+                            <li class="splide__slide">
+                                <div class="projct exp1">
+                                    <h3>Covid19-WorldWide-Report-ReactApp</h3>
+                                    <p>Online Ayuravedic,Home care, Pooja store, Dry Fruits, Essential & Natural Oils, and Health Care prodoucts seller.</p>
+                                    <p> Git link: <a target="_blank" href="https://github.com/abhishekballary/Covid19-WorldWide-Report-ReactApp">https://github.com/abhishekballary/Covid19-WorldWide-Report-ReactApp</a></p><br>
+                                        <p>Technologies Used :</p>
+                                    <ul>
+                                        <li>Front-End : React JS, Axios, React-Router</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
+                
+
+                
+
+                
             </div>
         </div>
     </section>
@@ -197,5 +228,13 @@
     smartBackspace: true, // this is a default
     loop: true
                  });
+</script>
+<script src="./js/slide.js"></script>
+<script>
+new Splide( '.splide', {
+	type        : 'loop',
+	autoplay    : true,
+	
+} ).mount();
 </script>
 </html>
