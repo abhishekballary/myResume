@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="./css/fontwesome.css">
     <link rel="stylesheet" href="./css/slide.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body onload="onLoadFunction()">
+<body class="body" onload="onLoadFunction()">
     <header>
         <div style="display: flex;justify-content: space-between;">
         <div id="qq"></div>
-        <!-- <div class="darkMode">
-            <input type="checkbox"  id="darkModeCheckBox">
-            <div class="darkModeCircle"></div>
-        </div> -->
+        <div class='darkModeOf'>
+            <i onclick=darkMode(this) class="far fa-sun"></i>
+            </div>
         </div>
         <div class="nameContainer">
                 <div class="row">
@@ -247,6 +247,7 @@
     <script src="./js/lang.js"></script>
 <script src="./js/index.js"></script>
 <script src="./js/retype.js"></script>
+<script src="./js/fontwesome.js"></script>
 <script>
     var typed = new Typed('#typed',{
     strings:["Software Engineer","JS Developer","React Developer","UI Designer","Full stack Developer"],
@@ -263,5 +264,8 @@ new Splide( '.splide', {
 	autoplay    : true,
 	
 } ).mount();
+
+
+
 </script>
 </html>

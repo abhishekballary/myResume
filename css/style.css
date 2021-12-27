@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+.body{
     background: linear-gradient(to right, #525252, #3d72b4)
 }
 
@@ -338,6 +338,15 @@ margin-top: 0.3rem;
     /* background-color: transparent !important; */
     
 }
+
+.darkMode{
+    background-color : #000000 !important;
+    /* transition: all 1s */
+}
+.fixed{
+    position: fixed;
+    /* top:20px */
+}
 .splide__slide{
     padding: 2rem;
     padding-top: 0rem;
@@ -379,7 +388,7 @@ margin-top: 0.3rem;
      color: transparent !important;
   }
 
-
+/* 
   .darkMode{
     border: 1px solid #1e1f26;
     width: 50px;
@@ -396,9 +405,19 @@ margin-top: 0.3rem;
   }
   input[type=checkbox]:checked + body{
         background-color: #1e1f26 !important
-    }
+    } */
 
-  
+
+    .darkModeOf{
+        position: fixed;
+        right: 10px;
+        top:6px
+        }
+
+  .lanBar{
+    position: fixed;
+    left: 0;
+  }
 
 
 
